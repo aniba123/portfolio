@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Homepage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-brand">MyWebsite</div>
+        <div class="navbar-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="navbar-menu">
+            <li class="navbar-item"><a href="#" class="navbar-link">Home</a></li>
+            <li class="navbar-item"><a href="#" class="navbar-link">About</a></li>
+            <li class="navbar-item"><a href="#" class="navbar-link">Services</a></li>
+            <li class="navbar-item"><a href="#" class="navbar-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Homepage Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Hi, I'm [Your Name]</h1>
+            <p class="hero-subtitle">A Passionate Front-End Developer</p>
+            <p class="hero-description">
+                I specialize in creating stunning, user-friendly, and responsive websites. With a strong focus on clean code and modern design, I bring ideas to life using HTML, CSS, JavaScript, and cutting-edge frameworks. Let's build something amazing together!
+            </p>
+            <a href="#contact" class="hero-button">Get in Touch</a>
+        </div>
+    </header>
+
+
+    <!-- About Page -->
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2 class="about-title">About Me</h2>
+            <p class="about-description">
+                I am a passionate and dedicated front-end developer with experience in building modern, responsive, and user-friendly websites. I love turning ideas into reality using the latest web technologies.
+            </p>
+            <div class="about-details">
+                <div class="about-card">
+                    <h3>Career Preferences</h3>
+                    <ul>
+                        <li>💼 Looking for <strong>Remote Jobs</strong></li>
+                        <li>🚀 Open to <strong>Freelancing Projects</strong></li>
+                    </ul>
+                </div>
+                <div class="about-card">
+                    <h3>Contact Me</h3>
+                    <ul>
+                        <li>📧 Email: <a href="mailto:your.email@example.com">your.email@example.com</a></li>
+                    </ul>
+                </div>
+                <div class="about-card">
+                    <h3>Social Media</h3>
+                    <ul class="social-links">
+                        <li><a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://github.com/yourprofile" target="_blank">GitHub</a></li>
+                        <li><a href="https://twitter.com/yourprofile" target="_blank">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!-- Service Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2>My Services</h2>
+      <p>As a freelance React developer, I offer the following services:</p>
+
+      <div class="service-list">
+        <div class="service-item">
+          <h3>Custom React Development</h3>
+          <p>Building scalable and maintainable React applications tailored to your needs.</p>
+        </div>
+        <div class="service-item">
+          <h3>Responsive Web Design</h3>
+          <p>Creating fully responsive websites that work seamlessly on all devices.</p>
+        </div>
+        <div class="service-item">
+          <h3>UI/UX Design</h3>
+          <p>Designing intuitive and user-friendly interfaces for better user experiences.</p>
+        </div>
+      </div>
+
+      <h2>My Projects</h2>
+      <div class="project-list">
+        <div class="project-item">
+          <h3>Project 1</h3>
+          <p>A responsive e-commerce website built with React and Redux.</p>
+          <a href="https://project1.com" target="_blank">View Project</a>
+        </div>
+        <div class="project-item">
+          <h3>Project 2</h3>
+          <p>A task management app with real-time updates using Firebase.</p>
+          <a href="https://project2.com" target="_blank">View Project</a>
+        </div>
+        <div class="project-item">
+          <h3>Project 3</h3>
+          <p>A portfolio website for a client with custom animations.</p>
+          <a href="https://project3.com" target="_blank">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Feel free to reach out! Enter your email, leave a message, or connect with me on LinkedIn.</p>
+
+      <form id="contact-form" class="contact-form">
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" placeholder="Leave your message or comment" rows="5" required></textarea>
+        </div>
+
+        <button type="submit">Send Message</button>
+      </form>
+
+      <div class="social-link">
+        <p>Follow me on LinkedIn:</p>
+        <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank" class="linkedin-btn">
+          <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="24">
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  
+      <footer>
+          <div class="rating-section">
+              <h3>Rate My Portfolio</h3>
+              <div class="star-rating">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            </div>
+            <p>Your rating: <span id="rating-value">0</span> stars</p>
+          </div>
+          <p>All Right Reserved @2025 created by Aniba Shakeel</p>
+      </footer>
+
+ 
+    <script src="./srcipt.js"></script>
+</body>
+</html>

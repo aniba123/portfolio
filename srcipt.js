@@ -8,6 +8,26 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 // });
 
+const cursor = document.querySelector(".cursor");
+const trail = document.querySelector(".trail");
+
+document.addEventListener("mousemove", (e) => {
+    cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+    setTimeout(() => {
+        trail.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+    }, 50); // Delay for smooth trailing effect
+});
+
+document.addEventListener("mousedown", () => {
+    cursor.classList.add("click");
+    trail.classList.add("click");
+});
+
+document.addEventListener("mouseup", () => {
+    cursor.classList.remove("click");
+    trail.classList.remove("click");
+});
+
 // Handle form submission
 const contactForm = document.getElementById('contact-form');
 

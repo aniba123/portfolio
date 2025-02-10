@@ -12,6 +12,37 @@ body {
     overflow-x: hidden;
 }
 
+.cursor {
+    position: fixed;
+    width: 15px;
+    height: 15px;
+    background: #ffcc00;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: transform 0.1s ease-out;
+    mix-blend-mode: difference;
+}
+
+.trail {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 204, 0, 0.3);
+    border-radius: 50%;
+    pointer-events: none;
+    transition: transform 0.15s ease-out;
+}
+
+.cursor.click {
+    transform: scale(1.5);
+    background: #ff0000;
+}
+
+.trail.click {
+    transform: scale(1.8);
+    background: rgba(255, 0, 0, 0.2);
+}
+
 /* Navbar Styles */
 .navbar {
     display: flex;
